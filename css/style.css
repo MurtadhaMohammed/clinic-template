@@ -1,0 +1,435 @@
+/* start globel ruler */
+body{
+    -webkit-font-family: 'Cairo', sans-serif;
+    -moz-font-family: 'Cairo', sans-serif;
+    -o-font-family: 'Cairo', sans-serif;
+    font-family: 'Cairo', sans-serif;
+  
+}
+/* end globel rulse*/
+
+/* start title*/
+.title{
+    padding: 5px 0 0 0;
+    background-color: #3399ff;
+    color: #fff;
+}
+.title p{
+    font-size: 18px
+}
+.title span{
+    font-size: 14px;
+    padding-top: 4px;
+    display: block
+}
+/* media title */
+@media(max-width:767px){
+    .title p{
+    text-align: center;
+    }
+.title span{
+   text-align: center;
+}
+.title{
+    padding: 5px 0 10px 0;
+}
+}
+/* end title*/
+
+/* start navbar*/
+.navbar{
+    border-radius: 0;
+    background-color: #fff;
+    margin-bottom: 0
+}
+.navbar .navbar-brand{
+font-size: 30px;
+font-weight: bold;
+color: #00aeff
+
+}
+.navbar .navbar-brand span{
+    font-weight: normal;
+    color: #bbb
+}
+.navbar-default .navbar-nav > li > a{
+    padding-top: 20px
+}
+
+/* end navbar*/
+
+/*start header*/
+.header{
+background: url('../img/header.jpg') no-repeat top center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 64vh;
+position: relative;
+overflow: hidden
+}
+ .header .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.6);
+    color: #fff
+}
+.centering-vh{
+    margin-top: 10vh
+}
+.header h1 span{
+    color: #00aeff
+}
+.header .lead::after{
+     content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #00aeff;
+    margin: 30px 0px
+}
+.header button{
+    padding: 10px 20px
+}
+/* header media */
+@media(max-width:767px){
+  .header{
+      display: block;
+      text-align: center
+  }
+    .header .lead::after{
+     display: block;
+     margin: auto;
+     margin-top: 20px
+}
+}
+@media(max-width:390px){
+ .header h1{
+    font-size: 24px
+}
+.header .lead{
+    font-size: 16px
+}
+.centering-vh{
+    margin-top: 5vh
+}
+
+}
+/*end header*/
+
+/* start info*/
+.info{
+color: #fff
+}
+.info .container{
+    width: 100%
+}
+
+
+
+.info .info-one{
+    background-color: #3399ff ;
+    padding: 20px 0
+}
+.info .info-two{
+    background-color: #0085c3;
+     padding: 20px 0
+}
+.info .info-three{
+    background-color: #003a70;
+    padding: 20px 0
+}
+/* End info*/
+
+/* Start about */
+.about{
+    padding:60px 0 0 0
+}
+
+.about h3{
+    margin-top: 25px
+}
+.about .social{
+     /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f6f6f6, #fefefe); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f6f6f6, #fefefe); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f6f6f6, #fefefe); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f6f6f6, #fefefe); /* Standard syntax */
+ 
+    
+}
+.about i{
+    margin: 10px 30px;
+    transition: .5s;
+    cursor: pointer
+}
+.about i.fa-facebook-square{
+ color: #3b5998
+}
+.about i.fa-twitter-square{
+ color: #1da1f2
+}
+.about i.fa-instagram{
+ color: #833ab4
+}
+.about i.fa-google-plus-circle{
+ color: #dd4b39
+}
+.about i:hover{
+    color: #ccc
+}
+/* about media*/
+@media(max-width:1199px){
+
+ .about img{
+     margin-top: 35px
+ }
+
+}
+@media(max-width:500px){
+
+ 
+    .about i{
+    margin: 10px 10px;
+    
+}
+}
+
+/* End about */
+
+/* Start services*/
+.service{
+    padding: 50px 0;
+   background-color: #fefefe
+}
+.service i{
+
+   color: #00aeff;
+   margin-top: 80px;
+ 
+}
+.service .end-service{
+    height: 50px;
+      /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fefefe, #f6f6f6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fefefe, #f6f6f6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fefefe, #f6f6f6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fefefe, #f6f6f6); /* Standard syntax */
+}
+/* end service */
+
+/* start team */
+.team{
+    padding: 60px 0;
+}
+.team h2{
+    margin-top: 0;
+}
+.team .carousel-control.left{
+    background-image: none;
+    font-size: 70px
+    
+}
+.team .carousel-control.right{
+    background-image: none;
+    font-size: 70px
+}
+.team .img-box{
+    margin: auto;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    position: relative;
+    transition:margin-top .4s ease,box-shadow .6s ease-out;
+    border-radius: 5px
+  
+}
+
+
+.team .img-box img{
+    width: 100%;
+   
+   cursor: pointer
+}
+.team .img-box i{
+    margin: 0 10px;
+    transform: .2s
+}
+.team .img-box i.fa-facebook-square:hover{
+ color: #3b5998
+}
+.team .img-box i.fa-twitter-square:hover{
+ color: #1da1f2
+}
+.team .img-box i.fa-instagram:hover{
+ color: #833ab4
+}
+.team .overlay{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0;
+    border-radius:100% 100% 0 0;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    transition: .5s
+}
+.team .select{
+    height: 45%;
+     border-radius: 0;
+}
+
+.team .img-box h5{
+ line-height: 0
+}
+/* media team */
+@media(min-width:991px){
+ 
+    .team .img-box:hover
+    {
+        box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 7);
+        margin-top:45px;
+    }
+}
+@media(max-width:991px){
+    .team .img-box:hover
+    {
+        box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 7);
+    }
+    .team .select{
+      height: 30%;
+    }
+}
+@media(max-width:330px){
+    .team .select{
+      height: 45%;
+    }
+}
+
+/* end team */
+
+/*start patient erea */
+.patient{
+    height: 450px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0) url('../img/patient.jpg') repeat scroll center top;
+    position: relative
+}
+ .patient .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.8);
+    color: #fff
+}
+ .patient h2{
+     margin-top: 60px;
+ }
+.patient .img-box{
+    margin: auto;
+   
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+   border-radius: 50%;
+   border: 5px solid #6a737b;
+  
+}
+.patient .img-box img{
+    width: 100%;
+    height: 100%;
+   cursor: pointer
+}
+.patient .carousel-control{
+    top: 30px;
+}
+.patient .carousel-control.right{
+    background: none;
+    right: 10%;
+
+}
+.patient .carousel-control.left{
+    background: none;
+    left:10%;
+}
+.patient a{
+    font-size: 50px
+}
+
+
+
+/*end patient erea */
+
+/* start concat */
+.concate{
+    padding: 50px 0 0 0
+}
+.concate i{
+    float: right;
+    margin-left: 20px
+}
+.concate form input{
+    margin: 15px 0;
+}
+#map {
+    margin-top: 40px;
+    height: 350px;
+    width: 100%;
+    background-color: #ccc;
+    padding-top: 150px;
+   
+}
+
+/* end concat */
+/* start footer*/
+footer{
+    height: 150px;
+    background-color: #333;
+ color: #fff;
+}
+footer i{
+    transition: .5s;
+    margin:35px 2%
+}
+footer i.fa-facebook-square:hover{
+ color: #3b5998
+}
+footer i.fa-twitter-square:hover{
+ color: #1da1f2
+}
+footer i.fa-instagram:hover{
+ color: #833ab4
+}
+footer i.fa-google-plus-circle:hover{
+ color: #dd4b39
+}
+
+/* end footer */
+/* framework */
+.under-line-center::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #00aeff;
+    margin: 20px auto
+}
+.under-line::after{
+     content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #00aeff;
+    margin: 20px 0
+}
