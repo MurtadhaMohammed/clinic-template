@@ -4,7 +4,8 @@ body{
     -moz-font-family: 'Cairo', sans-serif;
     -o-font-family: 'Cairo', sans-serif;
     font-family: 'Cairo', sans-serif;
-  
+    background-image: url("../img/aa.png");
+   
 }
 /* end globel rulse*/
 
